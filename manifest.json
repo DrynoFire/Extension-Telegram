@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Telegram Query ID Extractor",
+  "version": "1.0",
+  "description": "Extract query_id from Telegram web.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["https://web.telegram.org/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://web.telegram.org/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
