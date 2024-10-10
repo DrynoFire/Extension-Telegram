@@ -14,3 +14,14 @@ manifest.json: Tệp cấu hình cho extension.
 content.js: Mã JavaScript sẽ được chèn vào trang web mà tiện ích tương tác.
 background.js (tùy chọn): Điều khiển các sự kiện nền.
 Giao diện popup (tùy chọn): Một trang HTML để hiện giao diện người dùng nếu cần.
+
+
+Cài đặt tiện ích trên trình duyệt
+Mở Chrome và vào chrome://extensions/.
+Bật Developer mode (Chế độ dành cho nhà phát triển).
+Chọn Load unpacked (Tải gói không nén).
+Chọn thư mục chứa tiện ích của bạn.
+
+Kiểm tra tiện ích
+Mở Telegram Web.
+Nếu query_id được hiển thị trên trang, tiện ích sẽ lấy và hiển thị nó.
